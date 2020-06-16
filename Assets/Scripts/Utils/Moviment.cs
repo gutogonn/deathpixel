@@ -14,21 +14,17 @@ public class Moviment : MonoBehaviour
     private bool turn_right = true;
     private Rigidbody2D rigid_body;
 
-    public float mobile_input = 0;
-    public bool is_mobile;
-
     // Start is called before the first frame update
     void Start()
     {
         rigid_body = GetComponent<Rigidbody2D>();
-        is_mobile = FactoryController.Instance().mobileController != null ? true : false;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         if (dead) return;
-        move_input = is_mobile ? mobile_input : Input.GetAxis("Horizontal");
+        move_input = Input.GetAxis("Horizontal");
         rigid_body.velocity = new Vector2(move_input * speed, rigid_body.velocity.y);
 
         if (turn_right == false && move_input > 0)

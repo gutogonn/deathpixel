@@ -18,7 +18,7 @@ public class SpikePosition : MonoBehaviour
         spike = (GameObject)Instantiate(Resources.Load("Spike"));
         spike.name = "Spiker";
         spike.transform.SetParent(gameObject.transform);
-        spike.transform.localScale = new Vector3(10, 10, 1);
+        spike.transform.localScale = new Vector3(0.6f, 0.8f, 1);
         if (pos == SpikePositionEnum.UP)
         {
             spike.transform.position = new Vector3(

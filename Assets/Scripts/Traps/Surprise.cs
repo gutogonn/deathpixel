@@ -7,7 +7,6 @@ public class Surprise : MonoBehaviour
     private void Start()
     {
         GetComponent<SpriteRenderer>().enabled = false;
-        Debug.Log(this.gameObject.transform.childCount);
         trap = gameObject.transform.GetChild(0).gameObject;
         trap.SetActive(false);
         gameObject.name = "Trap_Surprise";
