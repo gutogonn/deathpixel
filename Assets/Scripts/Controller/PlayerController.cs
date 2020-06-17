@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
                 playerGO.jump();
                 playerGO.gameObject.GetComponent<CapsuleCollider2D>().isTrigger = true;
                 playerGO.gameObject.tag = "Dead";
-                FactoryController.Instance().gameController.justDied();
+                CoreController.Instance().gameController.justDied();
                 playerGO.cant_move = false;
             }
         }

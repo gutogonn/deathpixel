@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 323229295}
   - component: {fileID: 323229294}
   - component: {fileID: 323229297}
-  - component: {fileID: 323229298}
   m_Layer: 0
   m_Name: CORE
   m_TagString: Untagged
@@ -167,12 +166,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 323229293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cadf6ee9025e7a4d9ce8976cfcff13b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a8106affe879744aa88ee5c969f3db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   gameController: {fileID: 0}
-  mobileController: {fileID: 0}
 --- !u!4 &323229296
 Transform:
   m_ObjectHideFlags: 0
@@ -199,21 +197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60a1060227249d24eaa04ce101fb51d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
---- !u!114 &323229298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323229293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4481d78558c56b418a53a467cf75e55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  axis: 0
-  playerMove: {fileID: 0}
   canvas: {fileID: 0}
 --- !u!1 &377765928
 GameObject:

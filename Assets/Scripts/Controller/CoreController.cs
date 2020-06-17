@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
-public class FactoryController : MonoBehaviour
+public class CoreController : MonoBehaviour
 {
     public PlayerController playerController;
     public GameController gameController;
 
-    private static FactoryController instance = null;
-    public static FactoryController Instance()
+    private static CoreController instance = null;
+    public static CoreController Instance()
     {
         return instance;
     }

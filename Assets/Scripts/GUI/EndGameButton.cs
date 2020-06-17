@@ -6,6 +6,6 @@ public class EndGameButton : MonoBehaviour
 {
     public void mainMenu()
     {
-        FactoryController.Instance().gameController.mainMenu();
+        CoreController.Instance().gameController.mainMenu();
     }
 }

@@ -7,6 +7,6 @@ public class StartGameButton : MonoBehaviour
 {
     public void restart()
     {
-        FactoryController.Instance().gameController.startGame();
+        CoreController.Instance().gameController.startGame();
     }
 }
