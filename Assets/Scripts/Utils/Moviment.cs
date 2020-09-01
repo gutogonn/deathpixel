@@ -10,10 +10,19 @@ public class Moviment : MonoBehaviour
     public float jump_force = 5;
     public bool is_grounded = true;
 
-    private float move_input;
+    public float move_input;
     private bool turn_right = true;
     private Rigidbody2D rigid_body;
 
+    private static Moviment instance = null;
+    public static Moviment Instance()
+    {
+        return instance;
+    }
+    void Awake()
+    {
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +33,7 @@ public class Moviment : MonoBehaviour
     void FixedUpdate()
     {
         if (dead) return;
-        move_input = Input.GetAxis("Horizontal");
+        //move_input = Input.GetAxis("Horizontal");
         rigid_body.velocity = new Vector2(move_input * speed, rigid_body.velocity.y);
 
         if (turn_right == false && move_input > 0)
@@ -36,7 +45,7 @@ public class Moviment : MonoBehaviour
             flip();
         }
 
-        if (Input.GetKey(KeyCode.Space) && is_grounded)
+        if (Input.GetKey(KeyCode.Space))
         {
             jump();
         }
@@ -48,14 +57,17 @@ public class Moviment : MonoBehaviour
         turn_right = !turn_right;
         Vector3 scaler = transform.localScale;
         scaler.x *= -1;
-        transform.localScale = scaler; 
+        transform.localScale = scaler;
     }
 
     public void jump()
     {
-        //rigid_body.velocity = Vector2.up * jump_force;
-        rigid_body.AddForce(Vector2.up * jump_force);
-        is_grounded = false;
+        if (is_grounded)
+        {
+            rigid_body.AddForce(Vector2.up * jump_force);
+            is_grounded = false;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D hit)

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Advertisements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         player.health = 1;
-        player.point = 5; 
+        player.point = 5;
     }
 
     private void FixedUpdate()
@@ -24,6 +25,11 @@ public class PlayerController : MonoBehaviour
                 playerGO.gameObject.tag = "Dead";
                 CoreController.Instance().gameController.justDied();
                 playerGO.cant_move = false;
+            }
+            if ((player.point % 5) == 0)
+            {
+                // GoogleUtils.Instance().requestVideoAd();
+                // GoogleUtils.Instance().showVideoAd();
             }
         }
     }

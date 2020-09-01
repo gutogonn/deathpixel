@@ -53,8 +53,6 @@ MonoBehaviour:
   speed: 5
   jump_force: 350
   is_grounded: 1
-  mobile_input: 0
-  is_mobile: 0
 --- !u!50 &5294304304869795947
 Rigidbody2D:
   serializedVersion: 4
@@ -200,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5294304305973164562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.263, z: 0}
+  m_LocalPosition: {x: 0, y: -0.256, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5294304304869795958}

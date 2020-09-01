@@ -15,6 +15,6 @@ public class CoreController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         instance = this;
         gameController = GetComponent<GameController>();
-        playerController = GetComponent<PlayerController>();            
+        playerController = GetComponent<PlayerController>();
     }
 }
