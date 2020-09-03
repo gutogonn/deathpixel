@@ -1,0 +1,9 @@
+lastUpgrade=01010
+proj.pluginVersion=0.10.10
+proj.AppId=600569464762
+and.BundleId=com.ggonn.deadpixel
+proj.classDir=Assets
+proj.ConstantsClassName=GPGSIds
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--%0d%0aGoogle+Play+game+services+IDs.%0d%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0d%0a--%3e%0d%0a%3cresources%3e%0d%0a++%3c%21--+app_id+--%3e%0d%0a++%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e600569464762%3c%2fstring%3e%0d%0a++%3c%21--+package_name+--%3e%0d%0a++%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.ggonn.deadpixel%3c%2fstring%3e%0d%0a++%3c%21--+achievement+First+Blood+--%3e%0d%0a++%3cstring+name%3d%22achievement_first_blood%22+translatable%3d%22false%22%3eCgkIuo_rpb0REAIQAA%3c%2fstring%3e%0d%0a++%3c%21--+achievement+Negative+Zone+--%3e%0d%0a++%3cstring+name%3d%22achievement_negative_zone%22+translatable%3d%22false%22%3eCgkIuo_rpb0REAIQAQ%3c%2fstring%3e%0d%0a++%3c%21--+achievement+End+Game+--%3e%0d%0a++%3cstring+name%3d%22achievement_end_game%22+translatable%3d%22false%22%3eCgkIuo_rpb0REAIQAg%3c%2fstring%3e%0d%0a%3c%2fresources%3e%0d%0a
+and.ClientId=600569464762-eeq4o1gsotikrlq3dq92dajam5oq0l5c.apps.googleusercontent.com
+android.SetupDone=true
