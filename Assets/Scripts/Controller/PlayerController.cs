@@ -26,11 +26,6 @@ public class PlayerController : MonoBehaviour
                 CoreController.Instance().gameController.justDied();
                 playerGO.cant_move = false;
             }
-            if ((player.point % 5) == 0)
-            {
-                // GoogleUtils.Instance().requestVideoAd();
-                // GoogleUtils.Instance().showVideoAd();
-            }
         }
     }
 

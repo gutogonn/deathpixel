@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Map6.unity
     guid: 2e6b3117ab6b34d48a25cececbdb6136
   - enabled: 1
+    path: Assets/Scenes/Map7.unity
+    guid: b8e16b09a1037054a8d763cfccf6bc82
+  - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 380d3e287ce1df64a80627c9d56776df
   m_configObjects: {}

@@ -33,7 +33,7 @@ public class Moviment : MonoBehaviour
     void FixedUpdate()
     {
         if (dead) return;
-        //move_input = Input.GetAxis("Horizontal");
+        move_input = Input.GetAxis("Horizontal");
         rigid_body.velocity = new Vector2(move_input * speed, rigid_body.velocity.y);
 
         if (turn_right == false && move_input > 0)
